@@ -28,9 +28,9 @@ jobs:
       - name: build
         run: |
           cd slides #Folder where your main slides are
-          curl -LO https://raw.githubusercontent.com/arnehilmann/markdeck/master/markdeck
-          chmod a+x markdeck
-          ./markdeck once
+          curl -Lo markdeck https://github.com/arnehilmann/markdeck/releases/download/v0.60.0/markdeck.x86_64-unknown-linux-musl
+          chmod a+rx ./markdeck
+          ./markdeck
           cp -R assets deck/assets
           cp -R themes deck/themes
 
