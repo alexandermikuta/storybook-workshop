@@ -2,4 +2,4 @@
 
 ## Slides
 
-Slides can be found at
+Slides can be found at: [https://alexandermikuta.github.io/storybook-workshop](https://alexandermikuta.github.io/storybook-workshop)
