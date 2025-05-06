@@ -21,16 +21,13 @@ jobs:
       contents: read
 
     steps:
-      - name: Set up Docker Compose
-        uses: docker/setup-compose-action@v1
-
       - uses: actions/checkout@v2
       - name: build
         run: |
-          cd slides #Folder where your main slides are
           curl -Lo markdeck https://github.com/arnehilmann/markdeck/releases/download/v0.60.0/markdeck.x86_64-unknown-linux-musl
           chmod a+rx ./markdeck
-          ./markdeck
+          cd slides #Folder where your main slides are
+          ../markdeck
           cp -R assets deck/assets
           cp -R themes deck/themes
 
