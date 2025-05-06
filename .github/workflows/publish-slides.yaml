@@ -1,11 +1,9 @@
-name: GitHub Pages
+name: Deploy pages
 
 on:
-  push:
-    branches:
-      - main
-
   workflow_dispatch:
+  push:
+    branches: [main]
 
 permissions:
   contents: read
@@ -14,27 +12,47 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: ./slides
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Setup @antfu/ni
+        run: npm i -g @antfu/ni
+
+      - name: Install dependencies
+        run: nci
+
+      - name: Build
+        run: nr build --base /${{github.event.repository.name}}/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
     runs-on: ubuntu-latest
+    name: Deploy
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Convert Markdown
-        uses: KoharaKazuya/marp-cli-action@v4
-        with:
-          config-file: ./slides/.marprc.yml
-          generate-html: true
-          generate-pdf: false
-
-      - name: Upload page artifacts
-        uses: actions/upload-pages-artifact@v3
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
