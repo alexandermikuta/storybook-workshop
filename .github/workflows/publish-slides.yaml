@@ -1,52 +1,44 @@
-name: deploy to github pages
-
-env:
-  NODE_VERSION: 22
+name: Publish example slides to GitHub Pages
 
 on:
   push:
-    branches: [main]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches:
+      - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-
     steps:
-      - uses: actions/checkout@v2
-      - name: build
-        run: |
-          curl -Lo markdeck https://github.com/arnehilmann/markdeck/releases/download/v0.60.0/markdeck.x86_64-unknown-linux-musl
-          chmod a+rx ./markdeck
-          cd slides #Folder where your main slides are
-          ../markdeck
-          cp -R assets deck/assets
-          cp -R themes deck/themes
+      - uses: actions/checkout@v4
 
-          - name: Upload artifact
-          uses: actions/upload-pages-artifact@v3
-          with:
-            path: ./slides/deck
+      - name: Convert Markdown into HTML and PDF
+        uses: ./
+        with:
+          config-file: ./slides/.marprc.yml
+
+      - name: Uploade artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./examples
 
   deploy:
-    needs: build
     runs-on: ubuntu-latest
-
-    permissions:
-      pages: write
-      id-token: write
-
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
 
     steps:
       - name: Deploy to GitHub Pages

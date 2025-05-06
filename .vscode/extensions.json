@@ -23,7 +23,7 @@
       "evilz.vscode-reveal",
       "tnrich.vscode-extension-open-cypress",
       "shevtsov.vscode-cy-helper",
-      "josefbiehler.cypress-fixture-intellisense"
+      "josefbiehler.cypress-fixture-intellisense",
+      "marp-team.marp-vscode"
     ]
   }
-  
