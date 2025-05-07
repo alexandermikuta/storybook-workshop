@@ -6,6 +6,9 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+addons:
+  - fancy-arrow
+  - slidev-addon-qrcode
 ---
 
 # Storybook
@@ -23,24 +26,47 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+layout: two-cols-header
 transition: fade-out
 ---
 
 # What is Storybook?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Storybook is a frontend tool for building UI components and pages in isolation
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
+::left::
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+<ul>
+  <li data-id="anchor1">Development</li>
+  <li v-click="1" data-id="anchor2">Testing</li>
+  <li v-click="3" data-id="anchor3">Documentation</li>
+</ul>
+
+::right::
+
+<div class="wrapper">
+  <img v-click="1" data-id="anchor5" src="./general/component_testing.png"/>
+  <img data-id="anchor4" src="./general/development.png"/>
+  <img v-click="2" data-id="anchor6" src="./general/visual_testing.png" />
+  <img v-click="3" data-id="anchor7" src="./general/documentation.png"/>
+</div>
+
+<FancyArrow color="orange" roughness="2" bowing="0.5" arc="0.1" pos2="top"
+    q1="[data-id=anchor1]"
+    q2="[data-id=anchor4]"
+/>
+<FancyArrow v-click="1" color="lime" roughness="2" bowing="0.5" arc="0.1"  pos2="left"
+    q1="[data-id=anchor2]"
+    q2="[data-id=anchor5]"
+>Component Testing</FancyArrow>
+<FancyArrow v-click="2" color="lime" roughness="2" bowing="0.5" arc="-0.2" pos2="left"
+    q1="[data-id=anchor2]"
+    q2="[data-id=anchor6]"
+>Visual Testing</FancyArrow>
+<FancyArrow v-click="3" color="sky" roughness="2" bowing="0.5" arc="-0.1" pos2="top"
+    q1="[data-id=anchor3]"
+    q2="[data-id=anchor7]"
+/>
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
@@ -57,8 +83,22 @@ h1 {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-</style>
 
+.wrapper {
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  gap: 20px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid #666;
+  }
+}
+</style>
 <!--
 Here is another comment.
 -->
@@ -604,12 +644,24 @@ console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-
 ```
 
 ---
-layout: center
-class: text-center
+hideInToc: true
 ---
 
-# Learn More
+# Thanks!
+<br/>
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+<div class="flex flex-col items-center">
 
-<PoweredBySlidev mt-10 />
+# Code and Slides...
+
+<QRCode
+    :width="300"
+    :height="300"
+    type="svg"
+    data="https://github.com/alexandermikuta/storybook-workshop"
+    :margin="10"
+    :imageOptions="{ margin: 10 }"
+    :dotsOptions="{ type: 'extra-rounded', color: 'black' }"
+/>
+
+</div>
