@@ -1,0 +1,14 @@
+figure {
+  display: table;
+  border: 1px solid hsla(230, 40%, 5%, 0.5);
+  padding: 0.4rem;
+}
+
+figcaption {
+  color: white;
+  display: table-caption;
+  caption-side: bottom;
+  font-size: 0.6rem;
+  padding: 0.2rem;
+  background: linear-gradient(to top, hsla(230, 40%, 5%, 0.95), hsla(230, 40%, 5%, 0.5));
+}

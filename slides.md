@@ -112,7 +112,42 @@ level: 2
 
 ## The Problem
 
-<img src="/general/problem.png"/>
+<figure>
+  <img src="/general/problem.png"/>
+  <figcaption>https://storybook.js.org/docs-assets/8.6/get-started/multiverse.png</figcaption>
+</figure>
+
+---
+transition: slide-up
+layout: two-cols-header
+layoutClass: gap-16
+level: 2
+---
+
+# Why build UIs in Isolation?
+
+## The Solution
+
+::left::
+
+
+
+Every piece of UI is a [component](https://www.componentdriven.org/)
+
+> You do not need to spin up the whole app to see how they render. You can render a specific variation in isolation by passing props, mocking data or faking events
+
+::right::
+
+<figure>
+  <SlidevVideo autoplay controls>
+    <source src="/videos/whats-a-story.mp4" type="video/mp4" />
+    <p>
+      Your browser does not support videos. You may download it
+      <a href="https://storybook.js.org/docs-assets/8.6/get-started/whats-a-story.mp4">here</a>.
+    </p>
+  </SlidevVideo>
+  <figcaption>https://storybook.js.org/docs-assets/8.6/get-started/whats-a-story.mp4</figcaption>
+</figure>
 
 ---
 layout: two-cols
