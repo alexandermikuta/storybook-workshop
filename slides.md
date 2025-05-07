@@ -45,10 +45,10 @@ Storybook is a frontend tool for building UI components and pages in isolation
 ::right::
 
 <div class="wrapper">
-  <img v-click="1" data-id="anchor5" src="./general/component_testing.png"/>
-  <img data-id="anchor4" src="./general/development.png"/>
-  <img v-click="2" data-id="anchor6" src="./general/visual_testing.png" />
-  <img v-click="3" data-id="anchor7" src="./general/documentation.png"/>
+  <img v-click="1" data-id="anchor5" src="/general/component_testing.png"/>
+  <img data-id="anchor4" src="/general/development.png"/>
+  <img v-click="2" data-id="anchor6" src="/general/visual_testing.png" />
+  <img v-click="3" data-id="anchor7" src="/general/documentation.png"/>
 </div>
 
 <FancyArrow color="orange" roughness="2" bowing="0.5" arc="0.1" pos2="top"
