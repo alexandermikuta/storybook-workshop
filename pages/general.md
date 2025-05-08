@@ -104,8 +104,6 @@ level: 2
 
 ::left::
 
-
-
 Every piece of UI is a [component](https://www.componentdriven.org/)
 
 > You do not need to spin up the whole app to see how they render. You can render a specific variation in isolation by passing props, mocking data or faking events
@@ -171,13 +169,6 @@ export const Default: Story = {
   },
 };
 ```
-
-<style>
-  figure {
-    width: 80%;
-    height: 80%;
-  }
-</style>
 
 ---
 transition: slide-up
