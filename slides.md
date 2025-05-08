@@ -41,7 +41,7 @@ hide: false
 ---
 
 ---
-src: ./pages/structure.md
+src: ./pages/structure/tags.md
 hide: false
 ---
 
