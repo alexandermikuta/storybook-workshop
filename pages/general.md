@@ -258,3 +258,25 @@ e.g.
   }
 }
 </style>
+
+---
+transition: slide-up
+layout: image-right
+image: /general/storybook9.jpg
+---
+
+# Storybook 9
+
+> [Currently in Beta](https://storybook.js.org/blog/storybook-9-beta/)
+
+<br/>
+
+## Some new features
+
+- Tags-based organization
+
+- React Native for device and web
+
+- Tests can be run over all stories at once
+
+- Test Coverage support
