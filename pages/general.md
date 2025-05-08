@@ -280,3 +280,20 @@ image: /general/storybook9.jpg
 - Tests can be run over all stories at once
 
 - Test Coverage support
+
+---
+transition: slide-up
+layout: image-right
+image: /general/chromatic.webp
+---
+
+# Chromatic
+
+Chromatic is made by the team behind Storybook and integrates with Storybook, Playwright, and Cypress.
+It is a commercial product which needs to be [licensed](https://www.chromatic.com/pricing) for usage.
+
+> Chromatic is a visual testing tool that scans every possible UI state across browsers to catch bugs in appearance and functionality. It enables you to assign reviewers and resolve discussions to streamline team sign-off.
+
+<br/>
+
+> Chromatic uses storybook stories to power visual tests
