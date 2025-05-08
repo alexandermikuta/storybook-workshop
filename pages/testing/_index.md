@@ -1,5 +1,6 @@
 ---
 layout: section
+transition: slide-up
 ---
 
 # Testing

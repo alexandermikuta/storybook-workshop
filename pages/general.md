@@ -172,6 +172,7 @@ export const Default: Story = {
 
 ---
 transition: slide-up
+level: 2
 ---
 
 # Why build UIs in Isolation? - The Solution
@@ -217,6 +218,8 @@ level: 2
 </figure>
 
 ---
+level: 2
+---
 
 # Works with a lot of other Tools
 
@@ -258,6 +261,7 @@ e.g.
 transition: slide-up
 layout: image-right
 image: /general/storybook9.jpg
+level: 2
 ---
 
 # Storybook 9
@@ -280,6 +284,7 @@ image: /general/storybook9.jpg
 transition: slide-up
 layout: image-right
 image: /general/chromatic.webp
+level: 2
 ---
 
 # Chromatic

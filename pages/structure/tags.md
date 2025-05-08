@@ -2,6 +2,7 @@
 transition: slide-up
 layout: image-right
 image: /structure/storybook-tags.jpg
+level: 2
 ---
 
 # Tags
@@ -27,6 +28,7 @@ export const SkipTesting = {
 ---
 transition: slide-up
 layout: two-cols-header
+level: 2
 ---
 
 # Tags
