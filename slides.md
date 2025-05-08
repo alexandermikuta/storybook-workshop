@@ -161,6 +161,70 @@ Every piece of UI is a [component](https://www.componentdriven.org/)
 </figure>
 
 ---
+transition: slide-up
+layout: two-cols-header
+layoutClass: gap-16
+level: 2
+---
+
+# Why build UIs in Isolation? - The Solution
+
+UI-Variations are defined in Stories using the [CSF-Standard](https://github.com/ComponentDriven/csf)
+
+::left::
+
+<figure>
+  <SlidevVideo autoplay controls>
+    <source src="/videos/7.0-storybook-hero-video.mp4" type="video/mp4" />
+    <p>
+      Your browser does not support videos. You may download it
+      <a href="https://storybook.js.org/docs-assets/8.6/get-started/7.0-storybook-hero-video.mp4">here</a>.
+    </p>
+  </SlidevVideo>
+  <figcaption>https://storybook.js.org/docs-assets/8.6/get-started/7.0-storybook-hero-video.mp4</figcaption>
+</figure>
+
+::right::
+
+```ts {monaco}
+import type { Meta, StoryObj } from '@storybook/react';
+import { Histogram } from './Histogram';
+
+const meta: Meta<typeof Histogram> = {
+  component: Histogram,
+};
+
+export default meta;
+type Story = StoryObj<typeof Histogram>;
+
+export const Default: Story = {
+  args: {
+    dataType: 'latency',
+    showHistogramLabels: true,
+    histogramAccentColor: '#1EA7FD',
+    label: 'Latency distribution',
+  },
+};
+```
+
+---
+transition: slide-up
+layout: two-cols-header
+layoutClass: gap-16
+level: 2
+---
+
+# Why build UIs in Isolation? - The Solution
+
+Benefits:
+
+- Verify hard-to-reach edge cases of UI. Use addons to mock everything a component needs—context, API requests, device features, etc.
+- Test UIs with less effort and no flakes -> [Stories can be used as Unit-Tests](https://storybook.js.org/docs/writing-tests/import-stories-in-tests/stories-in-unit-tests)
+- UI Documentation for the team -> Easy to find and reuse existing UI Patterns
+- Stories show how UI actually works
+- Automate UI Workflows in CI -> Testing, Reviews, ...
+
+---
 level: 2
 ---
 
