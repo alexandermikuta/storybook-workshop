@@ -205,6 +205,16 @@ Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML D
 hideInToc: true
 ---
 
+# Ressources
+
+- [https://storybook.js.org/](https://storybook.js.org/)
+- [https://bradfrost.com/](https://bradfrost.com/)
+
+---
+hideInToc: true
+layout: end
+---
+
 # Thanks!
 <br/>
 
@@ -219,16 +229,7 @@ hideInToc: true
     data="https://github.com/alexandermikuta/storybook-workshop"
     :margin="10"
     :imageOptions="{ margin: 10 }"
-    :dotsOptions="{ type: 'extra-rounded', color: 'black' }"
+    :dotsOptions="{ type: 'extra-rounded', color: 'white' }"
 />
 
 </div>
-
----
-hideInToc: true
----
-
-# Ressources
-
-- [https://storybook.js.org/](https://storybook.js.org/)
-- [https://bradfrost.com/](https://bradfrost.com/)
