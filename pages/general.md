@@ -134,6 +134,8 @@ level: 2
 
 UI-Variations are defined in Stories using the [CSF-Standard](https://github.com/ComponentDriven/csf)
 
+> [Storybook uses the CSF-Standard since version 5.2](https://storybook.js.org/blog/component-story-format/)
+
 ::left::
 
 <figure>
@@ -192,6 +194,32 @@ Benefits:
     padding-top: 20px;
   }
 </style>
+
+---
+transition: slide-up
+layout: two-cols-header
+layoutClass: gap-8
+level: 2
+---
+
+# Design System Workflow
+
+::left::
+
+## [Brad Frost´s workflow](https://storybook.js.org/blog/why-most-design-systems-implode/)
+
+1. **Develop** component states and variants in a universal format called stories.
+2. **Review** them during development to verify appearance
+3. **Test** stories during QA with built-in testing for accessibility, interaction, visual regression
+4. **Document** components automatically and publish that documentation online
+5. **Share** components in other workflows like external sites, Figma, Notion
+
+::right::
+
+<figure>
+  <img src="/general/workflow.png"/>
+  <figcaption>https://storybookblog.ghost.io/content/images/size/w1000/2022/06/pasted-image-0-3.png</figcaption>
+</figure>
 
 ---
 

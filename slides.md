@@ -41,6 +41,11 @@ hide: false
 ---
 
 ---
+src: ./pages/structure.md
+hide: false
+---
+
+---
 level: 2
 ---
 
