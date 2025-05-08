@@ -36,7 +36,6 @@ image: /general/storybook2.jpg
 <Toc text-sm minDepth="1" maxDepth="2" />
 
 ---
-layout: two-cols-header
 transition: fade-out
 ---
 
@@ -44,36 +43,37 @@ transition: fade-out
 
 Storybook is a [frontend workshop](https://bradfrost.com/blog/post/a-frontend-workshop-environment/) for building UI components and pages in isolation
 
-::left::
-
 <ul>
   <li data-id="anchor1">Development</li>
   <li v-click="1" data-id="anchor2">Testing</li>
-  <li v-click="3" data-id="anchor3">Documentation</li>
+  <li v-click="4" data-id="anchor3">Documentation</li>
 </ul>
 
-::right::
-
 <div class="wrapper">
-  <img v-click="1" data-id="anchor5" src="/general/component_testing.png"/>
   <img data-id="anchor4" src="/general/development.png"/>
+  <img v-click="1" data-id="anchor5" src="/general/component_testing.png"/>
   <img v-click="2" data-id="anchor6" src="/general/visual_testing.png" />
-  <img v-click="3" data-id="anchor7" src="/general/documentation.png"/>
+  <img v-click="3" data-id="anchor_a11y" src="/general/a11y.png"/>
+  <img v-click="4" data-id="anchor7" src="/general/documentation.png"/>
 </div>
 
-<FancyArrow color="orange" roughness="2" bowing="0.5" arc="0.1" pos2="top"
+<FancyArrow color="orange" roughness="2"  pos2="top"
     q1="[data-id=anchor1]"
     q2="[data-id=anchor4]"
 />
-<FancyArrow v-click="1" color="lime" roughness="2" bowing="0.5" arc="0.1"  pos2="left"
+<FancyArrow v-click="1" color="lime" roughness="2" pos2="top"
     q1="[data-id=anchor2]"
     q2="[data-id=anchor5]"
 >Component Testing</FancyArrow>
-<FancyArrow v-click="2" color="lime" roughness="2" bowing="0.5" arc="-0.2" pos2="left"
+<FancyArrow v-click="2" color="lime" roughness="2" pos2="top"
     q1="[data-id=anchor2]"
     q2="[data-id=anchor6]"
 >Visual Testing</FancyArrow>
-<FancyArrow v-click="3" color="sky" roughness="2" bowing="0.5" arc="-0.1" pos2="top"
+<FancyArrow v-click="3" color="lime" roughness="2" pos2="top"
+    q1="[data-id=anchor2]"
+    q2="[data-id=anchor_a11y]"
+>a11y Testing</FancyArrow>
+<FancyArrow v-click="4" color="sky" roughness="2" pos2="top"
     q1="[data-id=anchor3]"
     q2="[data-id=anchor7]"
 />
@@ -84,6 +84,10 @@ Learn more: https://sli.dev/features/slide-scope-style
 -->
 
 <style>
+li {
+  width: 200px;
+}
+
 h1 {
   background-color: #2B90B6;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
@@ -97,13 +101,14 @@ h1 {
 .wrapper {
   height: 400px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-auto-flow: dense;
-  gap: 20px;
+  gap: 40px;
+  padding-top: 20px;
 
   img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: contain;
     border: 1px solid #666;
   }
@@ -118,9 +123,7 @@ transition: slide-up
 level: 2
 ---
 
-# Why build UIs in Isolation?
-
-## The Problem
+# Why build UIs in Isolation? - The Problem
 
 <figure>
   <img src="/general/problem.png"/>
@@ -134,9 +137,7 @@ layoutClass: gap-16
 level: 2
 ---
 
-# Why build UIs in Isolation?
-
-## The Solution
+# Why build UIs in Isolation? - The Solution
 
 ::left::
 
