@@ -8,6 +8,7 @@
     "export": "slidev export"
   },
   "dependencies": {
+    "@iconify-json/fluent-emoji": "^1.2.3",
     "@iconify-json/skill-icons": "^1.2.0",
     "@slidev/cli": "^51.6.0",
     "@slidev/theme-default": "latest",

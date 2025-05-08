@@ -41,7 +41,12 @@ hide: false
 ---
 
 ---
-src: ./pages/structure/tags.md
+src: ./pages/structure/_index.md
+hide: false
+---
+
+---
+src: ./pages/testing/_index.md
 hide: false
 ---
 
