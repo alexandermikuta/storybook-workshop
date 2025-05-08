@@ -96,7 +96,7 @@ level: 2
 ---
 transition: slide-up
 layout: two-cols-header
-layoutClass: gap-16
+layoutClass: gap-8
 level: 2
 ---
 
@@ -126,7 +126,7 @@ Every piece of UI is a [component](https://www.componentdriven.org/)
 ---
 transition: slide-up
 layout: two-cols-header
-layoutClass: gap-16
+layoutClass: gap-8
 level: 2
 ---
 
@@ -172,11 +172,15 @@ export const Default: Story = {
 };
 ```
 
+<style>
+  figure {
+    width: 80%;
+    height: 80%;
+  }
+</style>
+
 ---
 transition: slide-up
-layout: two-cols-header
-layoutClass: gap-16
-level: 2
 ---
 
 # Why build UIs in Isolation? - The Solution
