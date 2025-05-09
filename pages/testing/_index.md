@@ -6,6 +6,30 @@ transition: slide-up
 # Testing
 
 ---
+layout: two-cols-header
+layoutClass: gap-8
+---
+
+# Overview
+
+Storybook Test brings best-in-class tools directly into Storybook itself. You get the superpower of running Component Tests with Vitest, Visual tests with Chromatic, and Accessibility tests with Axe. All simultaneously and at breakneck speeds in real browsers. Test results are shown beside stories in the Storybook app.
+
+::left::
+
+<figure>
+  <img src="/testing/BugChart.png"/>
+  <figcaption>https://storybookblog.ghost.io/content/images/size/w1000/2024/10/BugChart.png</figcaption>
+</figure>
+
+::right::
+
+<figure>
+  <img src="/testing/overview.png"/>
+  <figcaption>https://storybookblog.ghost.io/content/images/size/w1000/2024/10/Diagram.png</figcaption>
+</figure>
+
+
+---
 src: ./a11y.md
 hide: false
 ---
