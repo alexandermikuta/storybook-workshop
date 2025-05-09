@@ -3,4 +3,4 @@ transition: slide-up
 level: 2
 ---
 
-# Atomic Design
+# Addons

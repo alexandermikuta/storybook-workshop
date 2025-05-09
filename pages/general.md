@@ -126,6 +126,7 @@ transition: slide-up
 layout: two-cols-header
 layoutClass: gap-8
 level: 2
+hideInToc: true
 ---
 
 # Why build UIs in Isolation? - The Solution
@@ -173,6 +174,7 @@ export const Default: Story = {
 ---
 transition: slide-up
 level: 2
+hideInToc: true
 ---
 
 # Why build UIs in Isolation? - The Solution

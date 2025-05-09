@@ -29,6 +29,7 @@ export const SkipTesting = {
 transition: slide-up
 layout: two-cols-header
 level: 2
+hideInToc: true
 ---
 
 # Tags

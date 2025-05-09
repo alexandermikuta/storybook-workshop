@@ -46,7 +46,22 @@ hide: false
 ---
 
 ---
+src: ./pages/development/_index.md
+hide: false
+---
+
+---
 src: ./pages/testing/_index.md
+hide: false
+---
+
+---
+src: ./pages/documentation/_index.md
+hide: false
+---
+
+---
+src: ./pages/customization/_index.md
 hide: false
 ---
 
