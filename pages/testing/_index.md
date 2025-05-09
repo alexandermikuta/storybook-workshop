@@ -12,7 +12,7 @@ layoutClass: gap-8
 
 # Overview
 
-Storybook Test brings best-in-class tools directly into Storybook itself. You get the superpower of running Component Tests with Vitest, Visual tests with Chromatic, and Accessibility tests with Axe. All simultaneously and at breakneck speeds in real browsers. Test results are shown beside stories in the Storybook app.
+Storybook Test brings best-in-class tools directly into Storybook itself. You can run Component Tests with Vitest, Visual tests with Chromatic, and Accessibility tests with Axe. Test results are shown beside stories in the Storybook app.
 
 ::left::
 
