@@ -11,6 +11,12 @@ level: 2
 
 MDX lets you use Markdown and JSX together.
 
+## MDX vs. CSF
+
+- **CSF:** great for succinctly defining stories (component examples). If you use TypeScript, it also provides type safety and auto-completion.
+
+- **MDX:** great for writing structured documentation and composing it with interactive JSX elements.
+
 ::right::
 
 <figure>
