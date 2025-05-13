@@ -64,11 +64,6 @@ hide: false
 ---
 
 ---
-src: ./viewports.md
-hide: false
----
-
----
 src: ./tailwind.md
 hide: false
 ---
