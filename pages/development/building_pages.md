@@ -72,3 +72,34 @@ Default.args = {
     height: 280px;
   }
 </style>
+
+
+---
+transition: slide-up
+layout: two-cols-header
+layoutClass: gap-8
+level: 2
+---
+
+# Building Pages
+
+Decompose complex pages into simple components
+
+::left::
+
+If you take a component-driven approach, where UIs are assembled from reusable components, you can further decompose the page by breaking it apart into its constituent components.
+
+For example, the Project page from the Component Encyclopedia holds most of its complexity in the header region. To separate page-level concerns like data loading from component-level concerns like title length, we extract the header into its own component, with its own stories.
+
+::right::
+
+<figure>
+  <img src="/development/decompose-pages.png"/>
+  <figcaption>https://storybookblog.ghost.io/content/images/size/w1600/2022/03/image-1.png</figcaption>
+</figure>
+
+<style>
+  img, video {
+    height: 280px;
+  }
+</style>
