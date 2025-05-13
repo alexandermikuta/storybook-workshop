@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@storybook/react": "^8.6.12",
-    "@vueuse/core": "^13.1.0"
+    "@vueuse/core": "^13.1.0",
+    "msw": "^2.8.2",
+    "msw-storybook-addon": "^2.0.4"
   }
 }
