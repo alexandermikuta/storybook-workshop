@@ -57,6 +57,12 @@ This makes the two techniques perfect complements.
   <figcaption>https://storybookblog.ghost.io/content/images/size/w1000/2024/05/image.png</figcaption>
 </figure>
 
+<style>
+  img, video {
+    height: 280px;
+  }
+</style>
+
 ---
 transition: slide-up
 level: 2
@@ -76,3 +82,10 @@ Since Storybook 8.1 it is possible to [reuse React/Vue3-Storybook Stories in Pla
   </SlidevVideo>
   <figcaption>https://storybookblog.ghost.io/content/media/2024/05/Playwright-CT-demo.mp4</figcaption>
 </figure>
+
+
+<style>
+  img, video {
+    height: 350px;
+  }
+</style>
