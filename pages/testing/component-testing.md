@@ -64,7 +64,7 @@ level: 2
 
 # Component Testing
 
-Since Storybook 8.1 it is possible to [reuse Reacte/Vue3-Storybook Stories in Playwright CT](https://storybook.js.org/blog/portable-stories-for-playwright-ct/)
+Since Storybook 8.1 it is possible to [reuse React/Vue3-Storybook Stories in Playwright CT](https://storybook.js.org/blog/portable-stories-for-playwright-ct/)
 
 <figure>
   <SlidevVideo autoplay controls>
