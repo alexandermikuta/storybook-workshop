@@ -24,7 +24,6 @@ level: 2
 
 Components can receive data or configuration from context providers. For example, a styled component might access its theme from a ThemeProvider or Redux uses React context to provide components access to app data. To mock a provider, you can wrap your component in a [decorator](https://storybook.js.org/docs/writing-stories/decorators) that includes the necessary context.
 
-
 ```ts {monaco}
 import React from 'react';
 
