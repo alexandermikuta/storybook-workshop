@@ -17,3 +17,34 @@ In one gif...
     width: 55%;
   }
 </style>
+
+---
+transition: slide-up
+level: 2
+---
+
+# Atomic Design
+
+Example Directory-Structure from [https://blogs.halodoc.io/atomic-design-system-implementation-at-halodoc/](https://blogs.halodoc.io/atomic-design-system-implementation-at-halodoc/)
+```{monaco}
+├── projects
+│   ├── atoms
+│       ├── button
+│       ├── link
+│       ├── chip
+│       ├── ...
+│   ├── molecules
+│       ├── snackbar
+│       ├── alert
+│       ├── bottom-sheet
+│       ├── ...
+│   ├── organisms
+│       ├── card
+│       ├── header
+│       ├── footer
+│       ├── ...
+│   ├── templates
+│       ├── doctor-profile
+│       ├── article
+│       ├── ...
+```

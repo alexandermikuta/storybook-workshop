@@ -41,3 +41,17 @@ jobs:
           # Grab this from the Chromatic manage page
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 ```
+
+---
+transition: slide-up
+level: 2
+---
+
+# CI
+
+Example CI/CD Pipeline
+
+<figure>
+  <img src="/testing/ci-pipeline.png"/>
+  <figcaption>https://blogs.halodoc.io/content/images/2022/05/image-41.png</figcaption>
+</figure>
