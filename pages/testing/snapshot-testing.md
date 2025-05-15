@@ -3,7 +3,7 @@ transition: slide-up
 level: 2
 ---
 
-# Snapshot Testing
+# [Snapshot Testing](https://storybook.js.org/docs/writing-tests/snapshot-testing/snapshot-testing)
 
 Snapshot tests compare the rendered markup of every story against known baselines
 
