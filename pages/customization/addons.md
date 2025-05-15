@@ -14,3 +14,4 @@ There are several [Addons for CSS](https://storybook.js.org/blog/storybook-addon
 - Backgrounds
 - CSS Props
 - Outline
+- Measure

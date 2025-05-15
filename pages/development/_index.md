@@ -34,11 +34,6 @@ All major JavaScript frameworks are component-driven. That means UIs are built f
 </style>
 
 ---
-src: ./writing-stories.md
-hide: false
----
-
----
 src: ./mocking-dependencies.md
 hide: false
 ---

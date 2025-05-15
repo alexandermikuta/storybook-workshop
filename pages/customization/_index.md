@@ -19,7 +19,3 @@ src: ./addons.md
 hide: false
 ---
 
----
-src: ./integrations.md
-hide: false
----
