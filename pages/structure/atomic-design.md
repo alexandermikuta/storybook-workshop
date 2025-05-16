@@ -62,3 +62,9 @@ Example Directory-Structure from [https://bradfrost.com/blog/post/atomic-design-
   <img src="/structure/Screen-Shot-2022-01-21-at-11.48.44-AM-1024x969.png"/>
   <figcaption>https://bradfrost.com/wp-content/uploads/2022/01/Screen-Shot-2022-01-21-at-11.48.44-AM-1024x969.png</figcaption>
 </figure>
+
+<style>
+  figure {
+    width: 70%;
+  }
+</style>
