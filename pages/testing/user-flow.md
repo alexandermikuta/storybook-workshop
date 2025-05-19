@@ -28,6 +28,6 @@ Tools like Cypress and Playwright allow you to run end-to-end (E2E) tests agains
 
 <style>
   img, video {
-    height: 280px;
+    width: 80%
   }
 </style>
