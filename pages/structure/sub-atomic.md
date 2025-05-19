@@ -19,3 +19,23 @@ Example of Token-Hierarchy
     width: 65%
   }
 </style>
+
+---
+transition: slide-up
+level: 2
+---
+
+# [Sub-Atomic](https://designtokenscourse.com/)
+
+Example of Token-Hierarchy in Storybook
+
+<figure>
+  <img src="/structure/tokens-storybook.png"/>
+  <figcaption>https://www.youtube.com/watch?v=yssHadbMviI</figcaption>
+</figure>
+
+<style>
+  figure {
+    width: 80%
+  }
+</style>
