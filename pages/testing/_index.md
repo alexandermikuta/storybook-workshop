@@ -6,8 +6,10 @@ transition: slide-up
 # Testing
 
 ---
+transition: slide-up
 layout: two-cols-header
 layoutClass: gap-8
+level: 2
 ---
 
 # Overview
@@ -27,7 +29,6 @@ Storybook Test brings best-in-class tools directly into Storybook itself. You ca
   <img src="/testing/overview.png"/>
   <figcaption>https://storybookblog.ghost.io/content/images/size/w1000/2024/10/Diagram.png</figcaption>
 </figure>
-
 
 ---
 src: ./a11y.md

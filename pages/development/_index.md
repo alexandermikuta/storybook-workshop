@@ -39,11 +39,6 @@ hide: false
 ---
 
 ---
-src: ./loaders.md
-hide: false
----
-
----
 src: ./building_pages.md
 hide: false
 ---
@@ -55,10 +50,5 @@ hide: false
 
 ---
 src: ./design-handoff.md
-hide: false
----
-
----
-src: ./tailwind.md
 hide: false
 ---
