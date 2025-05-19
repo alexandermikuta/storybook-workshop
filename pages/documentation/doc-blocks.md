@@ -9,6 +9,20 @@ level: 2
 
 DocBlocks are a set of readymade components that can be mixed and matched to build styleguides and component documentation pages (Prop Tables, Color Palettes, etc.).
 
+There are several [doc-blocks available](https://storybook.js.org/docs/writing-docs/doc-blocks#available-blocks), e.g.:
+
+- ArgTypes
+- Canvas
+- ColorPalette
+- Controls
+- Description
+- IconGallery
+- Markdown
+- Meta
+- Primary
+- Source
+- Typeset
+
 ---
 transition: slide-up
 layout: two-cols-header
